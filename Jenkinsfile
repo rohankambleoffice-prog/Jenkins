@@ -20,7 +20,7 @@ pipeline {
         stage('Sonarqube Analysis') {
             steps {
                 sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.host.url=http://80.65.208.53:9000 \
-                -Dsonar.login=squ_a8a2b618224cc522a1dcb1d5486fbe4c7f6fcba7 \
+                -Dsonar.login=squ_76aff5a90c6799b8bb6156e73229ac7efb65abee \
                 -Dsonar.projectName=Immverseai \
                 -Dsonar.projectKey=immverseai \
                 -Dsonar.sources=. \
